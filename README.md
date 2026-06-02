@@ -48,7 +48,7 @@ Remplace `assets/profile-placeholder.svg` par ta photo (format portrait ~175x233
 
 ### Liens de contact (icônes)
 Modifie les `href` des liens `social-link` (hero et pied de page):
-- LinkedIn : `https://www.linkedin.com/in/ton-profil`
+- LinkedIn : `https://www.linkedin.com/in/arthur-mabit/`
 - GitHub : `https://github.com/ton-compte`
 - Email : `mailto:ton.email@exemple.com`
 
