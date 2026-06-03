@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
 
@@ -53,107 +54,296 @@
                     <svg class="copy-email__icon copy-email__icon--check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
                   </span>
                 </button>
+                <button type="button" class="social-link copy-phone" data-phone="+33 6 33 49 56 26" title="Copier le numéro" aria-label="Copier le numéro dans le presse-papier">
+                  <span class="sr-only">Copier le numéro</span>
+                  <span class="copy-phone__icons" aria-hidden="true">
+                    <svg class="copy-phone__icon copy-phone__icon--phone" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <svg class="copy-phone__icon copy-phone__icon--copy" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                    <svg class="copy-phone__icon copy-phone__icon--check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                  </span>
+                </button>
               </section>
             </section>
           </div>
         </section>
 
         <section id="competences" class="section">
-          <h2 class="title title--section">compétences</h2>
+          <h2 class="title title--section">Compétences</h2>
           <div class="skills">
-            <div class="card skill-card">
-              <h3 class="skill-card__title">Langages</h3>
-              <ul class="skill-list">
-                <li class="skill" data-level="avance">
-                  <div class="skill__head"><span>Python</span><span class="skill__level">Avancé</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 75%"></span></div>
-                </li>
-                <li class="skill" data-level="debutant">
-                  <div class="skill__head"><span>Java</span><span class="skill__level">Débutant</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 24%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>Kotlin</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 53%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>Solidity</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 47%"></span></div>
-                </li>
-              </ul>
-            </div>
+            <article class="skill-card">
+              <header class="skill-card__header">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+                </span>
+                <h3 class="skill-card__title">Langages</h3>
+              </header>
+              <div class="skill-card__list">
+                <div class="skill-item" data-level="avance">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></div>
+                    <span class="skill-badge">Avancé</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="75%"></div></div>
+                </div>
+                <div class="skill-item" data-level="debutant">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-java-plain" aria-hidden="true"></i><span>Java</span></div>
+                    <span class="skill-badge">Débutant</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="24%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-kotlin-plain" aria-hidden="true"></i><span>Kotlin</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="53%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-solidity-plain" aria-hidden="true"></i><span>Solidity</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="56%"></div></div>
+                </div>
+              </div>
+            </article>
 
-            <div class="card skill-card">
-              <h3 class="skill-card__title">Web &amp; Frontend</h3>
-              <ul class="skill-list">
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>HTML</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 61%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>CSS</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 58%"></span></div>
-                </li>
-                <li class="skill" data-level="debutant">
-                  <div class="skill__head"><span>JavaScript</span><span class="skill__level">Débutant</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 32%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>TypeScript</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 49%"></span></div>
-                </li>
-              </ul>
-            </div>
+            <article class="skill-card">
+              <header class="skill-card__header">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+                </span>
+                <h3 class="skill-card__title">Web &amp; Frontend</h3>
+              </header>
+              <div class="skill-card__list">
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-html5-plain" aria-hidden="true"></i><span>HTML</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="52%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-css3-plain" aria-hidden="true"></i><span>CSS</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="58%"></div></div>
+                </div>
+                <div class="skill-item" data-level="debutant">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-javascript-plain" aria-hidden="true"></i><span>JavaScript</span></div>
+                    <span class="skill-badge">Débutant</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="29%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-typescript-plain" aria-hidden="true"></i><span>TypeScript</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="49%"></div></div>
+                </div>
+              </div>
+            </article>
 
-            <div class="card skill-card">
-              <h3 class="skill-card__title">Frameworks &amp; Données</h3>
-              <ul class="skill-list">
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>React</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 54%"></span></div>
-                </li>
-                <li class="skill" data-level="debutant">
-                  <div class="skill__head"><span>Next.js</span><span class="skill__level">Débutant</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 27%"></span></div>
-                </li>
-                <li class="skill" data-level="debutant">
-                  <div class="skill__head"><span>Vite</span><span class="skill__level">Débutant</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 26%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>SQL</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 48%"></span></div>
-                </li>
-              </ul>
-            </div>
+            <article class="skill-card">
+              <header class="skill-card__header">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+                </span>
+                <h3 class="skill-card__title">Frameworks &amp; Données</h3>
+              </header>
+              <div class="skill-card__list">
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-react-original" aria-hidden="true"></i><span>React</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="54%"></div></div>
+                </div>
+                <div class="skill-item" data-level="debutant">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-nextjs-plain" aria-hidden="true"></i><span>Next.js</span></div>
+                    <span class="skill-badge">Débutant</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="27%"></div></div>
+                </div>
+                <div class="skill-item" data-level="debutant">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-vitejs-plain" aria-hidden="true"></i><span>Vite</span></div>
+                    <span class="skill-badge">Débutant</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="26%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name">
+                      <svg class="skill-item__icon-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                      <span>SQL</span>
+                    </div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="48%"></div></div>
+                </div>
+              </div>
+            </article>
 
-            <div class="card skill-card">
-              <h3 class="skill-card__title">Outils &amp; Cloud</h3>
-              <ul class="skill-list">
-                <li class="skill" data-level="avance">
-                  <div class="skill__head"><span>Git</span><span class="skill__level">Avancé</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 77%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>Linux</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 46%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>Vercel</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 58%"></span></div>
-                </li>
-                <li class="skill" data-level="intermediaire">
-                  <div class="skill__head"><span>AWS</span><span class="skill__level">Intermédiaire</span></div>
-                  <div class="skill__bar"><span class="skill__fill" style="--skill: 43%"></span></div>
-                </li>
-              </ul>
-            </div>
+            <article class="skill-card">
+              <header class="skill-card__header">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                </span>
+                <h3 class="skill-card__title">Outils &amp; Cloud</h3>
+              </header>
+              <div class="skill-card__list">
+                <div class="skill-item" data-level="avance">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span></div>
+                    <span class="skill-badge">Avancé</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="77%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-linux-plain" aria-hidden="true"></i><span>Linux</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="46%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-vercel-original" aria-hidden="true"></i><span>Vercel</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="58%"></div></div>
+                </div>
+                <div class="skill-item" data-level="intermediaire">
+                  <div class="skill-item__head">
+                    <div class="skill-item__name"><i class="devicon-amazonwebservices-plain-wordmark" aria-hidden="true"></i><span>AWS</span></div>
+                    <span class="skill-badge">Intermédiaire</span>
+                  </div>
+                  <div class="skill-item__track"><div class="skill-item__bar" data-width="41%"></div></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="parcours" class="section">
+          <h2 class="title title--section">Parcours</h2>
+          <div class="timeline">
+            <article class="timeline-item" data-tone="highlight">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+              </div>
+              <div class="timeline-item__card">
+                <div class="timeline-item__head">
+                  <h3 class="timeline-item__title">La suite : Alternance &amp; École</h3>
+                  <span class="timeline-badge">Dès 2026</span>
+                </div>
+                <p class="timeline-item__desc">En recherche active d'une opportunité d'alternance pour les prochaines années de mon BUT (2e et 3e année), avec l'ambition de poursuivre ensuite en Master ou École d'Ingénieur. L'objectif : allier mon bagage théorique à des défis professionnels concrets.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item" data-tone="current">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+              </div>
+              <div class="timeline-item__card">
+                <div class="timeline-item__head">
+                  <div class="timeline-item__titles">
+                    <h3 class="timeline-item__title">BUT Informatique</h3>
+                    <p class="timeline-item__subtitle">IUT de Nantes <span class="timeline-item__note">(Actuellement en 1ère année)</span></p>
+                  </div>
+                  <span class="timeline-badge">2025 - 2028</span>
+                </div>
+                <p class="timeline-item__desc">Formation intensive mêlant théorie et pratique avec de nombreux travaux de groupe. Développement de bases solides en algorithmique, conception web/logicielle, architecture réseau et bases de données.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item" data-tone="past">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+              </div>
+              <div class="timeline-item__card">
+                <div class="timeline-item__head">
+                  <div class="timeline-item__titles">
+                    <h3 class="timeline-item__title">Baccalauréat STI2D <span class="timeline-item__spec">(Spé. SIN)</span></h3>
+                    <p class="timeline-item__subtitle">Lycée Saint-François d'Assise, Savenay</p>
+                  </div>
+                  <span class="timeline-badge">Obtenu en 2025</span>
+                </div>
+                <p class="timeline-item__desc">Spécialité Systèmes d'Information et Numérique. Découverte approfondie de la logique algorithmique, de l'architecture des réseaux et de la programmation. Une période clé qui a confirmé ma volonté d'évoluer dans l'informatique.</p>
+              </div>
+            </article>
           </div>
         </section>
 
         <section id="projets" class="section">
-          <h2 class="title title--section">projets</h2>
-          <div class="projects">
+          <h2 class="title title--section">Projets</h2>
+
+          <div class="projects-group" id="projets-pro">
+            <h3 class="projects-group__title">Professionnels</h3>
+            <div class="projects">
+
+            <article class="card project-card">
+              <div class="project-card__media">
+                <img src="assets/project-placeholder.svg" alt="Aperçu du projet" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Nom du projet</h3>
+                <p class="project-card__desc">Placeholder, hehe</p>
+                <div class="badges">
+                  <span class="badge">React</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">PostgreSQL</span>
+                </div>
+                <div class="links-row">
+                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Site
+                  </a>
+                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    Source
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-card__media">
+                <img src="assets/project-placeholder.svg" alt="Aperçu du projet" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Nom du projet</h3>
+                <p class="project-card__desc">Placeholder, hehe</p>
+                <div class="badges">
+                  <span class="badge">React</span>
+                  <span class="badge">Node.js</span>
+                  <span class="badge">PostgreSQL</span>
+                </div>
+                <div class="links-row">
+                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                    Site
+                  </a>
+                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    Source
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            </div>
+          </div>
+
+          <div class="projects-group" id="projets-perso">
+            <h3 class="projects-group__title">Personnels</h3>
+            <div class="projects">
 
             <article class="card project-card">
               <div class="project-card__media">
@@ -230,56 +420,7 @@
               </div>
             </article>
 
-            <article class="card project-card">
-              <div class="project-card__media">
-                <img src="assets/project-placeholder.svg" alt="Aperçu du projet" loading="lazy" />
-              </div>
-              <div class="project-card__body">
-                <h3 class="project-card__title">Nom du projet</h3>
-                <p class="project-card__desc">Placeholder, hehe</p>
-                <div class="badges">
-                  <span class="badge">React</span>
-                  <span class="badge">Node.js</span>
-                  <span class="badge">PostgreSQL</span>
-                </div>
-                <div class="links-row">
-                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                    Site
-                  </a>
-                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                    Source
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <article class="card project-card">
-              <div class="project-card__media">
-                <img src="assets/project-placeholder.svg" alt="Aperçu du projet" loading="lazy" />
-              </div>
-              <div class="project-card__body">
-                <h3 class="project-card__title">Nom du projet</h3>
-                <p class="project-card__desc">Placeholder, hehe</p>
-                <div class="badges">
-                  <span class="badge">React</span>
-                  <span class="badge">Node.js</span>
-                  <span class="badge">PostgreSQL</span>
-                </div>
-                <div class="links-row">
-                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
-                    Site
-                  </a>
-                  <a class="btn-badge" href="#" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                    Source
-                  </a>
-                </div>
-              </div>
-            </article>
-
+            </div>
           </div>
         </section>
 
@@ -302,6 +443,14 @@
             <svg class="copy-email__icon copy-email__icon--mail" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
             <svg class="copy-email__icon copy-email__icon--copy" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
             <svg class="copy-email__icon copy-email__icon--check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="social-link copy-phone" data-phone="+33 6 33 49 56 26" title="Copier le numéro" aria-label="Copier le numéro dans le presse-papier">
+          <span class="sr-only">Copier le numéro</span>
+          <span class="copy-phone__icons" aria-hidden="true">
+            <svg class="copy-phone__icon copy-phone__icon--phone" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <svg class="copy-phone__icon copy-phone__icon--copy" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+            <svg class="copy-phone__icon copy-phone__icon--check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
           </span>
         </button>
       </section>
