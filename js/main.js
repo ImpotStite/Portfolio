@@ -3,6 +3,33 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+function setupSiteHeader() {
+  const shell = document.getElementById("site-header-shell");
+  const trigger = document.getElementById("site-header-trigger");
+  if (!shell || !trigger) return;
+
+  const setHeaderHeight = () => {
+    document.documentElement.style.setProperty(
+      "--site-header-height",
+      `${shell.offsetHeight}px`
+    );
+  };
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      shell.classList.toggle("is-scrolled", !entry.isIntersecting);
+      setHeaderHeight();
+    },
+    { threshold: 0, rootMargin: "1px 0px 0px 0px" }
+  );
+
+  observer.observe(trigger);
+  setHeaderHeight();
+  window.addEventListener("resize", setHeaderHeight);
+}
+
+setupSiteHeader();
+
 const COPY_RESET_MS = 2000;
 
 function setupCopyButtons(selector, getValue, labels) {

@@ -16,10 +16,27 @@
 <body>
 
   <div class="container">
+    <div class="site-header-trigger" id="site-header-trigger" aria-hidden="true"></div>
+    <div class="site-header-shell" id="site-header-shell">
+      <header class="site-header" id="site-header">
+        <div class="site-header__inner">
+          <a href="#accueil" class="site-header__brand" title="Accueil" aria-label="Retour à l'accueil">
+            <img src="assets/favicon.svg" alt="" width="28" height="28" draggable="false" />
+          </a>
+          <nav class="site-header__nav" aria-label="Navigation principale">
+            <a class="site-header__link" href="#accueil">Accueil</a>
+            <a class="site-header__link" href="#competences">Compétences</a>
+            <a class="site-header__link" href="#parcours">Parcours</a>
+            <a class="site-header__link" href="#projets">Projets</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
     <main class="grow">
       <article class="stack">
 
-        <section class="hero">
+        <section id="accueil" class="hero">
           <div class="polaroid">
             <img src="assets/profile-placeholder.svg" alt="Photo de profil" width="175" height="233" draggable="false" />
           </div>
