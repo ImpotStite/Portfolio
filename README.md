@@ -1,16 +1,6 @@
 # Portfolio
 
-Portfolio statique d'une seule page d'Arthur Mabit, en français, inspiré de [tedawf.com](https://tedawf.com/). Mode sombre uniquement, sans framework.
-
-## Lancer le site
-
-Ouvre simplement `index.html` dans ton navigateur (double-clic), ou sers le dossier avec un petit serveur local:
-
-```bash
-# Avec Python
-python -m http.server 8000
-# puis ouvre http://localhost:8000
-```
+Portfolio statique d'une seule page d'Arthur Mabit, en français. Mode sombre uniquement, sans framework.
 
 ## Structure
 
