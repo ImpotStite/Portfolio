@@ -802,6 +802,7 @@ button.social-link {
 .project-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -820,6 +821,7 @@ button.social-link {
 }
 
 .project-card__body {
+  flex: 1;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -842,7 +844,7 @@ button.social-link {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
-  margin-top: 0.25rem;
+  margin-top: auto;
 }
 
 .badge {
