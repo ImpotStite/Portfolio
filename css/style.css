@@ -297,9 +297,14 @@ body::after {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.btn-outline:hover {
+.btn-outline:hover:not(:disabled) {
   background-color: hsl(var(--accent));
   color: hsl(var(--accent-foreground));
+}
+
+.btn-outline:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .socials {
